@@ -1,5 +1,5 @@
 # BN-BrainTF
-BN-BrainTF
+"BN-BrainTF: Brain Network Community-Aware Global-Local Transformer for EEG-based Emotion Recognition"
 
 Taeseong Kim, Gang Wang, Won Hee Lee
 
