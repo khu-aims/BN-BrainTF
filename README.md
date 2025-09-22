@@ -1,12 +1,14 @@
 # BN-BrainTF
 BN-BrainTF
 
+Taeseong Kim, Gang Wang, Won Hee Lee
 
 # Abstract
+The human brain exhibits a complex organization into functional communities, with interconnected regions of interest (ROIs) playing a critical role in emotional processing. However, traditional transformer models for EEG-based emotion recognition often treat all ROIs equally, neglecting the crucial role of these communities. To address this limitation, we propose the brain network community-aware global-local transformer (BN-BrainTF) model. BN-BrainTF employs source localization to identify brain activity origins within functional communities derived from EEG data. The model then extracts local features specific to each community and global features capturing whole-brain context using a spectral-spatial attention module and a dynamical graph convolutional network based on functional connectivity. A global-local transformer with cross-attention integrates these features within each community, while a fusion transformer captures interactions between all communities. We evaluated BN-BrainTF on two benchmark datasets with distinct emotional classification paradigms. On the SEED dataset (three emotional states: positive, negative, and neutral), our model achieved 77.92% average accuracy across all subjects. For the SEED-IV dataset (four emotional states: happy, sad, fear, and neutral), BN-BrainTF achieved 59.41% average accuracy across all subjects. These results demonstrate the effectiveness of incorporating functional brain community structure for EEG-based emotion recognition, with consistent performance across different emotional classification tasks. The comprehensive representation of brain activity informed by functional communities provides superior emotion recognition performance compared to traditional approaches that ignore brain network organization.
 
-
-# Overall Pipeline
-<img width="1247" height="1125" alt="BN-BrainTF_Overview" src="https://github.com/user-attachments/assets/fce63032-58b5-4fe6-997e-4d0585089748" />
+# Overview
+![Overview Figure](image/BN-BrainTF_Overview.png)
+Overview of the proposed BN-BrainTF model. (a) Preprocessing stage involving source localization, functional parcellation, and differential entropy (DE) feature extraction. (b) G lobal and local feature extraction using Spectral-Spatial Attention Module (SSAM) and Pearson correlation coefficients-based Dynamical Graph Convolutional Neural Network (PDGCN). (c) Emotion recognition based on global-local transformer and fusion transformer.
 
 # Requirements
 * certifi==2022.6.15
