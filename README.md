@@ -45,3 +45,7 @@ Overview of the proposed BN-BrainTF model. (a) Preprocessing stage involving sou
 * typing_extensions==4.3.0
 * urllib3==1.26.11
 * wheel==0.37.1
+
+
+## Acknowledgement
+This work was supported by the Culture, Sports and Tourism R&D Program through the Korea Creative Content Agency grant funded by the Ministry of Culture, Sports and Tourism (RS-2023-00226263). This work was also supported by the Institute of Information & Communications Technology Planning & Evaluation (IITP), funded by the Korea government (MSIT), under grants RS-2024-00509257 (Global AI Frontier Lab), IITP-2024-RS-2024-00438239 (ITRC, Information Technology Research Center), and RS-2022-00155911 (Artificial Intelligence Convergence Innovation Human Resources Development, Kyung Hee University).
